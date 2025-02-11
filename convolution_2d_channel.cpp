@@ -2,7 +2,7 @@
 #include <fstream> 
 using namespace std;
 int main(){
-    int input_height = 7, input_width = 9,in_channel = 3,out_channel = 2 , kernel_height = 5, kernel_width = 2 ,output_height = input_height - kernel_height + 1,output_width = input_width - kernel_width + 1;
+    int input_height = 7, input_width = 7,in_channel = 1,out_channel = 4 , kernel_height = 3, kernel_width = 3 ,output_height = input_height - kernel_height + 1,output_width = input_width - kernel_width + 1;
     int input[in_channel][input_height][input_width] ,output[out_channel][output_height][output_width],filter[out_channel][in_channel][kernel_height][kernel_width];
     for(int r = 0;r < in_channel;r++){
         for(int c = 0;c < input_height;c++){
